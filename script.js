@@ -1,3 +1,5 @@
+
+
 let inputBox = document.getElementById('inputBox');
 let buttons = document.querySelectorAll('button');
 
@@ -17,11 +19,13 @@ arr.forEach(button => {
             string = "";
             inputBox.value = string;
         } else if (e.target.innerHTML === 'DEL') {
-            string = string.slice(0, -1);
-            inputBox.value = string;
-        } else {
+               inputBox.value=inputBox.value.slice(0,-1)
+         } 
+        else {
             string += e.target.innerHTML;
             inputBox.value = string;
         }
     });
 });
+
+
